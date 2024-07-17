@@ -8,26 +8,47 @@ B. Repetition Execution
 2) For Loop
 """
 
+#A. Conditional Statement
+#1) if and else statement
+#Example 1
+age = 17
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
 
+#Example 2
+temperature = 19
+if temperature > 35:
+    print("It is a warm day")
+if temperature < 25:
+    print("It is a cold day")
 
+#2) elif (nested) statement
+#Example 1
+score = 75
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print ("Grade: C")
+else:
+    print("Grade: D")
+    
+#Example 2    
+day_of_the_week = "Tuesday"
+if day_of_the_week == "Monday":
+    print("Start of the week")
+elif day_of_the_week == "Wednesday":
+    print("Midweek")
+elif day_of_the_week == "Friday":
+    print("End of the week")
+else:
+    print("Any other day")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#B. Repetition Execution
+#1) While Loop
 #Example 1
 count = 0
 while count < 5:
@@ -46,3 +67,10 @@ i = 1
 while i <= 5:
   print ("Hello guys!")
   i =  i + 1
+
+#Example 4
+while True:
+  user_input = input("Enter a command ('exit' to quit): ")
+  if user_input.lower() == 'exit':
+    break
+print("You have entered:", user_input)
