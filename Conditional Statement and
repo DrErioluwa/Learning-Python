@@ -3,10 +3,10 @@ A. Conditional Statement
 1) if and else statement
 2) elif (nested) statement
 
-B. Repetition Execution
-1) While Loop
-2) For Loop
-"""
+B. Repetition Execution : 
+1) While Loop : will iterate as long as the statement is true
+2) For Loop  : used to iterate over a sequence such as a list, tuple, dictionary, set or string ; used when the number of iteration is known ; will iterate over each element in 
+ """
 
 #A. Conditional Statement
 #1) if and else statement
@@ -74,3 +74,68 @@ while True:
   if user_input.lower() == 'exit':
     break
 print("You have entered:", user_input)
+
+
+
+#Break Statement and Continuous Statement
+# Break Statement
+#Example 1
+i = 0
+while i < 10:
+    if i == 5:
+        break
+    print("Hello")
+    i = i + 1
+
+
+z = 0
+while z < 10:
+    z = z + 1
+    if z == 5:
+        continue
+    print("Happy day")
+    
+
+#for loop synthax
+"""
+for element in sequene:
+"""
+    
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+
+for i in range(10):
+    i = i + 1
+    print(i)
+
+
+"""    
+#synthax of range function
+range(start, stop,[step])
+"""
+
+for z in range(0, 20, 2):
+    print(z)
+
+
+#iterating over strings
+name = "HENRY"
+for letter in name:
+    print(letter)
+
+
+numbers = [10, 24, 3, 56, 78, 9]
+largest = numbers[0]
+for number in numbers:
+    if number > largest:
+        largest = number
+print ("Largest number is: ", largest)
+
+
+numbers = [10, 24, 3, 56, 78, 9]
+total = 10
+for number in numbers:
+    total = total + number
+print("Total sum: ", total)
