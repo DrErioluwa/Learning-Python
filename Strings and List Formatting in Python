@@ -1,0 +1,107 @@
+#A. Strings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#New style formatting (str. format method)
+new_formatted_string = "Hello again, My name is 
+
+
+#f-strings in python 3.6+
+f_strings = f"Hello guys! My name is {name} and I am {age} years old."
+print(f_strings)
+
+
+
+
+
+#B. List
+
+#Initialize an empty list
+list = []
+print(type(list)
+
+numbers = [1, 2, 2, 4, 5, 6, 7]
+fruits = ["Apple", "Cherry", "Kiwi"]
+mixed = [1, 2, "Kiwi", "Cherry"]
+
+#To access indexed item
+#Positive indexing
+first_item = fruits[0]
+print(first_item)
+
+second_item = fruits[1]
+print(second_item)
+
+#Negative indexing
+last_item = fruits[-1]
+print(last_item)
+
+second_to_the_last_item = fruits[-2]
+print(second_to_the_last_item)
+
+#Unpacking list items
+first, second, third = fruits
+print (first, second, third)
+
+#Slicing
+slice_1 = numbers [1:4]
+print(slice_1)
+
+#other slicing types [:3] [2:]
+
+#print all numbers with step of 2
+slice_2 = numbers[::2]
+print(slice_2)
+
+#Appending items to a list using '.append' method
+fruits.append("Orange")
+print(fruits)
+
+#Adding multiple elements using '.extend' method
+fruits.extend(["Mango", "Grape"])
+print(fruits)
+
+#Using the '.insert' method
+fruits.insert(1, "Blueberry")
+print(fruits)
+
+#Remove items from a list
+fruits.remove("Mango")
+print(fruits)
+
+#Using the '.pop' method
+removed_fruits = fruits.pop(1)
+print(removed_fruits)
+print(fruits)
+
+import random
+
+
+
+#removing multiple multiple occurences of an item
+fruits = ["Apple", "Cherry", "Kiwi", "Cherry"]
+print(fruits)
+def remove_two_occurences(lst, item):
+    try:
+        lst.remove(item)
+        lst.remove(item)
+    except ValueError:
+        print(f"The item {item} was not found in list")
+    return lst
+
+lst = fruits
+item = "Cherry"
+
+remove_two_occurences(lst, item)
+print(fruits)
