@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Challenge: Create new list of your hobbies and print them out with their index
+
+hobbies = ["Running", "Gaming", "Swimming", "Coding", "Reading", "Baking", "Travelling", "Photography", "Cooking", "Gardening"]
+for i in range(len(hobbies)):
+    print("Index {} - {}". format(i, hobbies[i]))
+# OR
+hobbies = ["Running", "Gaming", "Swimming", "Coding", "Reading", "Baking", "Travelling", "Photography", "Cooking", "Gardening"]
+for i in range(len(hobbies)):
+    print(f"Index {i} - {hobbies[i]}")
+# OR Using While Loop
+hobbies = ["Running", "Gaming", "Swimming", "Coding", "Reading", "Baking", "Travelling", "Photography", "Cooking", "Gardening"]
+i = 0
+
+while i < len(hobbies):
+    print("Index {} - {}".format(i, hobbies[i]))
+    i += 1
+# OR
+hobbies = ["Running", "Gaming", "Swimming", "Coding", "Reading", "Baking", "Travelling", "Photography", "Cooking", "Gardening"]
+i = 0
+
+while i < len(hobbies):
+    print(f"Index {i} - {hobbies[i]}")
+    i += 1
+
+
