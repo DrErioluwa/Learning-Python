@@ -42,3 +42,58 @@ while i < len(hobbies):
     i += 1
 
 
+
+""" 
+Problem Set
+1: Create a dictionary that contains your basic bio info, with must have property of skills which is a list of your skills
+
+2: Loop through your bio dict and print the key and values to stdout, for skills, Make Skills as an heading and print all the skills out too.
+
+Structure of your output
+My name is Ayo
+My Age is 21
+My Skills are:
+Python
+Go
+Java
+"""
+
+# Step 1: Create a dictionary with basic bio info
+bio_info = {
+    "name": "Ayo",
+    "age": 21,
+    "skills": ["Python", "Go", "Java"]
+}
+
+# Step 2: Loop through the dictionary and print key-value pairs
+for key, value in bio_info.items():
+    if key == "skills":
+        print("My Skills are:")
+        for skill in value:
+            print(skill)
+    else:
+        print(f"My {key.capitalize()} is {value}")
+
+
+#OR
+
+# Step 1: Create a dictionary with basic bio info
+bio_info = {
+    "name": "Ayo",
+    "age": 21,
+    "skills": ["Python", "Go", "Java"]
+}
+
+# Step 2: Define a function to print the bio information
+def print_bio_info(bio):
+    for key, value in bio.items():
+        if key == "skills":
+            print("My Skills are:")
+            for skill in value:
+                print(skill)
+        else:
+            print(f"My {key.capitalize()} is {value}")
+
+# Call the function with the bio_info dictionary
+print_bio_info(bio_info)
+
