@@ -105,3 +105,20 @@ item = "Cherry"
 
 remove_two_occurences(lst, item)
 print(fruits)
+
+
+
+
+
+#YouTube
+
+#Introduction to Lists in Python
+# Empty List
+numbers = []
+#list with different types of items.
+items = [1, 2, 'N', "Go", 3.14159]
+
+#Accessing Elements of a List
+
+
+
