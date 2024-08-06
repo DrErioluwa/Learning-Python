@@ -97,3 +97,214 @@ def print_bio_info(bio):
 # Call the function with the bio_info dictionary
 print_bio_info(bio_info)
 
+
+
+
+
+
+#YouTube
+#Introduction to Dictionaries in Python
+#dict_name = {key1: value1, key2: value2, ...}
+
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car
+ 
+>>>
+'''
+
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car['model'] = 'q8'
+>>> car
+
+>>>
+'''
+
+#length of a dictionary
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> len(car)
+
+>>>
+'''
+
+#The dict() Constructor
+'''
+>>> car = dict(brand = "Audi", model = "q7")
+>>> car
+
+>>>
+
+#Accessing Dictionary Items in Python
+#Accessing Values using Key Names
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car['brand']
+
+>>>
+'''
+
+#Accessing values using get() Method
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car.get('brand')
+
+>>>
+'''
+
+#Accessing Keys using keys() Method
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> keys = car.keys()
+>>> keys
+
+>>> car['fuel type'] = 'diesel'
+>>> keys
+
+>>>
+'''
+
+#Accessing values using values() Method
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> values = car.values()
+>>> values
+
+>>> car['fuel type'] = 'diesel'
+>>> values
+
+>>>
+'''
+
+#Accessing items using items() Method
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> items = car.items()
+>>> items
+
+>>> car['fuel type'] = 'diesel'
+>>> items
+
+>>>
+'''
+
+#Changing and Adding Dictionary Items in Python
+#Changing Values using Key Names
+'''
+dict_name[key] = value
+'''
+
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car['model'] = 's5'
+>>> car
+
+>>>
+'''
+
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car['model'] = 's5'
+>>> car
+
+>>>
+'''
+
+#Changing Values using update() Method
+'''
+dict_name.update(dictionary)
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car.update({'model': 's5'})
+>>> car
+
+>>>
+'''
+
+#Adding New Items using Key Names
+'''
+dict_name[new_key] = new_value
+'''
+
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car['color'] = 'black'
+>>> car
+
+>>>
+'''
+
+#Adding New Items using update() Method
+'''
+dict_name.update(dictionary)
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car.update({'color': 'black'})
+>>> car
+
+>>>
+'''
+
+#Removing an item using pop() Method
+'''
+dict_name.pop(key)
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car.pop('model')
+
+>>> car
+
+>>>
+'''
+ 
+#Removing an item using popitem() Method
+'''
+dict_name.popitem()
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car.popitem()
+
+>>> car
+
+>>>
+'''
+
+#Removing an Item using del Keyword
+'''
+del dict_name[key]
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> del car['model']
+>>> car
+
+>>>
+'''
+
+#Removing a dictionary using del Keyword
+'''
+del dict_name
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> del car
+>>> car
+NameError: name 'car' is not defined. Did you mean: 'chr'?
+>>>
+'''
+
+#Empty a dictionary using clear() Method
+'''
+dict_name.clear()
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car.clear()
+>>> car
+
+>>>
+'''
