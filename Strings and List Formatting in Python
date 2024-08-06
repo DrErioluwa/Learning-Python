@@ -119,6 +119,276 @@ numbers = []
 items = [1, 2, 'N', "Go", 3.14159]
 
 #Accessing Elements of a List
+#Accesssing Elements of a Single-dimensional List
+my_list = [5, 10, 15, 20]
+first_item = my_list[0]
+print(first_item)
+
+#Negative Indexing
+my_list = [5, 10, 15, 20]
+second_item = my_list[-3]
+print(second_item)
+
+#Acccesing Elements of a Multi-dimensional List
+my_list2 = [[1, 2, 3], "Neso", [4, 5, 6]]
+first_item = my_list2[0][0]
+print(first_item)
+
+second_bracket = my_list2[2]
+print(second_bracket)
+
+sixth_item = my_list2[2][1]
+print(sixth_item)
+
+my_list3 = [[1, 2, 3], [['a', 'b', 'c'], 5, 6]]
+access_b = my_list3[1][0][1]
+print(access_b)
+
+#Adding Elements to a List in Python
+#append
+languages = ['c', 'cpp', 'java']
+languages.append('python')
+
+languages.append('ruby')
+languages.append('php')
+languages.append(['python', 'javascript'])
+
+print(languages)
+
+#insert
+languages = ['c', 'cpp', 'java']
+languages.insert(0, 'python')
+
+print(languages)
 
 
+#extend
+languages = ['c', 'cpp', 'java']
+more_languages = ['python', 'javascript']
+languages.extend(more_languages)
+
+print(languages)
+
+
+#input() method
+name = input()
+John
+print(name)
+
+number = input('Enter a number: ')
+
+
+#input() Method in Python
+
+#input() Method
+'''
+>>> name = input()
+John
+>>> name
+
+>>>
+'''
+
+#input() Method with a Message
+'''
+>>> number = input('Enter a number: ')
+
+>>> number
+
+>>>
+'''
+
+#Typecasting the User Input
+'''
+>>>number = int(input('Enter a number: '))
+
+>>> number
+
+>>>
+'''
+
+'''
+>>> number = input('Enter a number: ')
+
+>>> number
+
+>>> int(number)
+
+>>>
+'''
+
+#Input a List using split() Method in Python
+#Revising the split() Method
+'''
+>>> sentence = "I am John"
+>>> sentence.split()
+
+>>>
+'''
+
+#Input a List using split() Method
+#Example: Create a list of numbers 67, 80, 95, and 5.
+'''
+>>> numbers = input("Enter the numbers: ").split()
+
+>>> numbers
+
+>>>
+'''
+
+#Input a List using split() Method and Loops in Python
+#Accepting a List using split() and for Loop
+'''
+>>> n = int(input("Enter the number of elements: "))
+
+>>> numbers = input("Enter the numbers: ").split()
+
+>>> for i in  range(0, n):
+...     numbers[i] = int(numbers[i])
+...
+>>> numbers
+
+>>>
+'''
+
+#Changing List Items in Python
+#Changing an Item
+>>> list = ["Rob", "Jennifer", 1, 2, "Bob"]
+>>> list[2] = "Michael"
+>>> list
+
+>>>
+'''
+
+#Changing Multiple Items
+'''
+>>> list = ["Rob", "Jennifer", 1, 2, "Bob"]
+>>> list[2:4] = ["Michael", "Anderson", "Emma"]
+>>> list
+
+>>>
+'''
+
+#Inserting a New Item
+'''
+>>> list = ["Rob", "Jennifer", 1, 2, "Bob"]
+>>> list.insert(2, "Mike")
+>>> list
+
+>>>
+'''
+
+#Removing List Items in Python
+#Remove an item using the remove() Method
+'''
+>>> li = ["John", "Mike", "David"]
+>>> li.remove("John")
+>>> li
+
+>>>
+'''
+
+#Remove an item using the pop() Method
+'''
+>>> li = ["John", "Mike", "David"]
+>>> li.pop(1)
+'Mike'
+>>> li
+
+>>>
+'''
+
+#Remove an item using the del Keyword
+'''
+>>> li = ["John", "Mike", "David"]
+>>> del li[0]
+>>> li
+
+>>>
+'''
+
+#Clear the List using the clear() Method
+'''
+>>> li = ["John", "Mike", "David"]
+>>> li.clear()
+>>> li
+
+>>>
+'''
+
+#List Comprehension in Python
+#Introduction to List Comprehension
+'''
+>>> names = ['John', 'James', 'Emmy', 'Michael', 'Jimmy']
+>>> j_names = []
+>>> for name in names:
+...     if 'J' in name:
+...             j_names.append(name)
+...
+>>> j_names
+
+>>>
+'''
+
+'''
+>>> names = ['John', 'James', 'Emmy', 'Michael', 'Jimmy']
+>>> j_names = [name for name in names if 'J' in name]
+>>> j_names
+
+>>>
+'''
+
+'''
+>>> names = ['John', 'James', 'Emmy', 'Michael', 'Jimmy']
+>>> names_copy = [name for name in names]
+>>> names_copy
+
+>>>
+'''
+
+'''
+>>> animals = ['lion', 'tiger', 'monkey', 'elephant', 'frog']
+>>> filtered_animals = []
+>>> for animal in animals:
+...     filtered_animals.append(animal.title())
+...
+>>> filtered_animals
+
+>>>
+'''
+
+'''
+>>> num = input()
+25
+>>> num = int(input("Enter a number: "))
+
+>>> result = num + 10
+>>> result
+
+>>>
+'''
+
+'''
+>>> list4 = [1, 2, 'Andy', 'great']
+>>> result = 'Andy is ' + list4.pop()
+>>> result
+
+>>>
+'''
+
+'''
+>>> list5 = [1, 2, 3, 4, 5]
+>>> list6 = [v**2 for v in list5]
+>>> list6
+
+>>>
+'''
+
+'''
+>>> list7 = [1, 2, 3, 4, 5]
+>>> list7.extend([6, 7, 8])
+>>> list7
+
+>>>
+'''
 
