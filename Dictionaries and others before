@@ -103,6 +103,38 @@ print_bio_info(bio_info)
 
 
 #YouTube
+#Introduction to Tuples in Python
+'''
+tuple_name = (item1, item2, item3, ...)
+'''
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> cars
+
+>>>
+
+#Tuple with one item
+'''
+>>> car = ('Audi',)
+>>> car
+
+>>>
+
+#Length of a tuple
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> len(cars)
+
+>>>
+'''
+
+#The tuple Constructor
+'''
+>>> cars = tuple(('Audi', 'Mercedes', 'BMW'))
+>>> cars
+
+>>>
+'''
 #Introduction to Dictionaries in Python
 #dict_name = {key1: value1, key2: value2, ...}
 
