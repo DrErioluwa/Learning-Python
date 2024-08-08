@@ -293,7 +293,7 @@ del dict_name
 >>> car = {'brand': 'Audi', 'model': 'q7'}
 >>> del car
 >>> car
-NameError: name 'car' is not defined. Did you mean: 'chr'?
+
 >>>
 '''
 
@@ -308,3 +308,54 @@ dict_name.clear()
 
 >>>
 '''
+
+#Copying a Dictionary
+id(x) #to check id of a variable
+#showing that we cannot copy mutable objects using assignments
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car_copy = car
+>>> car_copy
+
+>>> car_copy['model'] = 'q8'
+>>> car_copy
+
+>>> car
+
+>>>
+'''
+
+#Copying a dictionary using copy() Method
+'''
+dict_name2 = dict_name1.copy()
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car_copy = car.copy()
+>>> car_copy
+
+>>> car_copy['model'] = 'q8'
+>>> car_copy
+
+>>> car
+
+>>>
+'''
+
+#Copying a dictionary using dict() Method
+'''
+dict_name2 = dict(dict_name1)
+'''
+'''
+>>> car = {'brand': 'Audi', 'model': 'q7'}
+>>> car_copy = dict(car)
+>>> car_copy
+
+>>> car_copy['model'] = 'q8'
+>>> car_copy
+
+>>> car
+
+>>>
+'''
+
