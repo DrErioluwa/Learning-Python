@@ -135,6 +135,134 @@ tuple_name = (item1, item2, item3, ...)
 
 >>>
 '''
+
+#Accessing Tuple Items
+#Through Positive Indexing
+'''
+tuple_name[index]
+'''
+
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> cars[1]
+
+>>>
+'''
+#Through Negative Indexing
+'''
+tuple_name[index]
+'''
+
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> cars[-1]
+
+>>>
+'''
+#Through Slicing
+'''
+tuple_name[index1:index2]
+'''
+
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> cars[1:3]
+
+>>> cars[1:]
+
+>>> cars[:]
+
+>>>
+'''
+
+#Updating a Tuple
+#Adding Items to a Tuple
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> temp = list(cars)
+>>> temp.append('Toyota')
+>>> temp
+
+>>> cars = tuple(temp)
+>>> cars
+
+>>>
+'''
+
+#Updating Items of a Tuple
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> temp = list(cars)
+>>> temp[1] = 'Toyota'
+>>> temp
+
+>>> cars = tuple(temp)
+>>> cars
+
+>>>
+'''
+
+#Removing Items of a Tuple
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> temp = list(cars)
+>>> temp.remove('BMW')
+>>> temp
+
+>>> cars = tuple(temp)
+>>> cars
+
+>>>
+'''
+
+#Remove the entire tuple using del keyword
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> del cars
+>>> cars
+
+>>>
+'''
+
+#Unpacking a Tuple
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW')
+>>> car1, car2, car3 = cars
+>>> car1
+
+>>> car2
+
+>>> car3
+
+>>>
+'''
+
+#Use of Asterisk
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW', 'Toyota', 'Ford')
+>>> car1, car2, *car3 = cars
+>>> car1
+
+>>> car2
+
+>>> car3
+
+>>>
+'''
+
+'''
+>>> cars = ('Audi', 'Mercedes', 'BMW', 'Toyota', 'Ford')
+>>> car1, *car2, car3 = cars
+>>> car1
+
+>>> car2
+
+>>> car3
+
+>>>
+'''
+
+
 #Introduction to Dictionaries in Python
 #dict_name = {key1: value1, key2: value2, ...}
 
